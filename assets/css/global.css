@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0a0a;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+main .start_desc {
+  min-width: 48vw;
+}
+main .start_desc .start_desc_b {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .start_desc .start_desc_b .social_media svg {
+  position: relative;
+  fill: #DDDDDD;
+  width: 50px;
+  margin-right: 10px;
+  transition: 0.2s ease;
+}
+main .start_desc .start_desc_b .social_media svg:hover {
+  transition: 0.2s ease;
+  cursor: pointer;
+  filter: invert(1);
+}
+main .start_desc h1.main_name {
+  color: #DDDDDD;
+  font-family: "Nunito", sans-serif;
+  font-size: 128px;
+  line-height: 96px;
+}
+main .start_desc p.main_desc {
+  position: relative;
+  left: 10px;
+  text-align: left;
+  color: #DDDDDD;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+main .scroll_down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+}
+main .scroll_down h1 {
+  color: #DDDDDD;
+  font-family: "Nunito", sans-serif;
+  line-height: 0;
+}
+main .scroll_down svg {
+  position: relative;
+  width: 96px;
+  -webkit-animation: toDown 0.8s ease infinite;
+          animation: toDown 0.8s ease infinite;
+}
+
+@-webkit-keyframes toDown {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  10% {
+    transform: translate3d(0, 2px, 0);
+  }
+  25% {
+    transform: translate3d(0, 4px, 0);
+  }
+}
+
+@keyframes toDown {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  10% {
+    transform: translate3d(0, 2px, 0);
+  }
+  25% {
+    transform: translate3d(0, 4px, 0);
+  }
+}
+.intro {
+  opacity: 1;
+  min-height: 100vh;
+  max-height: 100vh;
+  font-family: "Nunito", sans-serif;
+}
+.intro .presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  max-height: 100vh;
+  border-left: 2px solid #DDDDDD;
+  padding-left: 1vw;
+  margin: 0 0 0 16vw;
+}
+.intro .presentation .p_content p {
+  font-size: 96px;
+  color: #DDDDDD;
+}
+.intro .presentation .p_content p span.purple {
+  color: #8879B0;
+}
+.intro .presentation .p_content p.um {
+  display: none;
+  transform: translate3d(0px, 40px, 0);
+  color: #DDDDDD;
+  opacity: 0.75;
+  font-size: 56px;
+}
+.intro .presentation .p_content p.dois {
+  display: none;
+  transform: translate3d(0px, 75px, 0);
+  color: #DDDDDD;
+  opacity: 0.5;
+  font-size: 48px;
+}
+.intro .presentation .p_content p.tres {
+  display: none;
+  transform: translate3d(0px, 100px, 0);
+  color: #DDDDDD;
+  opacity: 0.25;
+  font-size: 42px;
+}
+.intro .presentation .p_content p.quatro {
+  font-size: 42px;
+  display: flex;
+  text-align: center;
+  align-items: baseline;
+}
+.intro .presentation .p_content a.download {
+  margin: 20px 0 0 10px;
+  display: flex;
+  align-items: center;
+  color: #DDDDDD;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  border: 1px solid #DDDDDD;
+  width: 200px;
+  border-radius: 6px;
+  padding: 10px;
+  transition: 0.2s ease;
+}
+.intro .presentation .p_content a.download:hover {
+  transition: 0.2s ease;
+  border: 1px solid #0a0a0a;
+  color: #0a0a0a;
+  background: #30AADD;
+}
+.intro .presentation .p_content a.download:hover svg {
+  fill: #0a0a0a;
+}
+.intro .presentation .p_content a.download img {
+  width: 32px;
+}
+
+p.um.ativo {
+  display: block !important;
+}
+
+p.dois.ativo {
+  display: block !important;
+}
+
+p.tres.ativo {
+  display: block !important;
+}
+
+.intro.ativo {
+  -webkit-animation: border 2s ease forwards;
+          animation: border 2s ease forwards;
+}
+.intro.ativo .presentation p {
+  -webkit-animation: showCode 4s forwards;
+          animation: showCode 4s forwards;
+}
+.intro.ativo .presentation p.um {
+  -webkit-animation: showCode 5s forwards;
+          animation: showCode 5s forwards;
+}
+.intro.ativo .presentation p.dois {
+  -webkit-animation: showCode 6s forwards;
+          animation: showCode 6s forwards;
+}
+.intro.ativo .presentation p.tres {
+  -webkit-animation: showCode 6.5s forwards;
+          animation: showCode 6.5s forwards;
+}
+.intro.ativo .presentation p.quatro {
+  -webkit-animation: showCode 7s forwards;
+          animation: showCode 7s forwards;
+}
+
+@-webkit-keyframes showCode {
+  0% {
+    transform: translate3d(-400px, 0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate3d(-400px, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes showCode {
+  0% {
+    transform: translate3d(-400px, 0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: translate3d(-400px, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes border {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes border {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}/*# sourceMappingURL=global.css.map */
