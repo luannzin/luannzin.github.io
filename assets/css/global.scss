@@ -131,7 +131,7 @@ main{
         align-items: baseline;
       }
       a.download{
-        margin: 20px 0 0 10px;
+        margin: 100px 0 0 10px;
         display: flex;
         align-items: center;
         color: $white;
@@ -140,16 +140,21 @@ main{
         font-size: 30px;
         font-weight: bold;
         border: 1px solid $white;
-        width: 200px;
+        width: 206px;
         border-radius: 6px;
         padding: 10px;
         transition: 0.2s ease;
+        svg{
+          margin-left: 6px;
+          transition: 0.2s ease;
+        }
         &:hover{
           transition: 0.2s ease;
           border: 1px solid $black;
           color: $black;
           background: $blue_neon;
           svg{
+            transition: 0.2s ease;
             fill: $black;
           }
         }

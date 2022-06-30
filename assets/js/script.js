@@ -9,7 +9,7 @@ function animaScroll() {
 
       console.log(scrollTop);
 
-      if (scrollTop < 100) {
+      if (scrollTop < 50) {
         p.classList.add('ativo');
       }
     });

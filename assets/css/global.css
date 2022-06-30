@@ -145,7 +145,7 @@ main .scroll_down svg {
   align-items: baseline;
 }
 .intro .presentation .p_content a.download {
-  margin: 20px 0 0 10px;
+  margin: 100px 0 0 10px;
   display: flex;
   align-items: center;
   color: #DDDDDD;
@@ -154,9 +154,13 @@ main .scroll_down svg {
   font-size: 30px;
   font-weight: bold;
   border: 1px solid #DDDDDD;
-  width: 200px;
+  width: 206px;
   border-radius: 6px;
   padding: 10px;
+  transition: 0.2s ease;
+}
+.intro .presentation .p_content a.download svg {
+  margin-left: 6px;
   transition: 0.2s ease;
 }
 .intro .presentation .p_content a.download:hover {
@@ -166,6 +170,7 @@ main .scroll_down svg {
   background: #30AADD;
 }
 .intro .presentation .p_content a.download:hover svg {
+  transition: 0.2s ease;
   fill: #0a0a0a;
 }
 .intro .presentation .p_content a.download img {
